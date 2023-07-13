@@ -1,0 +1,28 @@
+@charset "UTF-8"; /* 文字コード宣言 */
+@import url("../common/styles/default/base.css");
+@import url("../common/styles/default/main.css");
+
+
+#main h1:before {
+	content: url("rcm_h1.png");
+}
+* html #main h1 span { /* IE6 用 */
+	list-style-image: url("rcm_h1.png");
+}
+*+html #main h1 span { /* IE7 用 */
+	list-style-image: url("rcm_h1.png");
+}
+
+#main dt {
+	color: #0000FF;
+	font-weight: 700;
+	font-size: large;
+	margin: 0px 15px 10px 15px;
+	padding: 3px 0px 3px 10px;
+	background-color: #EEEEEE;
+	border-left: #999999 solid 3px;
+}
+#main dd {
+	margin-left:  15px;
+	margin-right: 15px;
+}

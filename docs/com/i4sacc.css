@@ -1,0 +1,26 @@
+@charset "UTF-8"; /* 文字コード宣言 */
+@import url("../common/styles/default/base.css");
+@import url("../common/styles/default/main.css");
+
+
+#main h1:before {
+	content: url("com_h1.png");
+}
+* html #main h1 span.jp { /* IE6 用 */
+	list-style-image: url("com_h1.png");
+}
+*+html #main h1 span.jp{ /* IE7 用 */
+	list-style-image: url("com_h1.png");
+}
+
+div.image {
+	margin-left: 20px;
+}
+#image_mainOffice img {
+	width:  444px;
+	height: 369px;
+}
+#image_tokyoOffice img {
+	width:  383px;
+	height: 301px;
+}

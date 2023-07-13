@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=Shift_JIS" />
+    <meta name="pagetitle"   content="研究支援システム" />
+    <meta name="description" content="変化の激しい R&amp;D をより速く、より正確に！" />
+    <meta name="keywords"    content="研究支援,データベース,XML" />
+    <meta http-equiv="Pragma"        content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <title>株式会社キャトルアイ・サイエンス &gt; エンジニアリングデータ管理システム『ASNARO』 &gt; 情報入力</title>
+    <link type="text/css" charset="UTF-8" rel="stylesheet" href="asnaroinput.css" />
+    <script type="text/javascript" charset="UTF-8" src="../common/javascript/prototype.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="../common/javascript/mainMenuPulldown.js"></script>
+  </head>
+  <body>
+    
+    <!-- 開始: header -->
+    <div id="header">
+      
+      <div class="logo"><a title="HOME" href="../index.html"><img src="../common/image/small_logo.png" alt="株式会社キャトルアイ・サイエンス" /></a></div>
+      
+      <div class="location">
+        <a href="../index.html">HOME</a> &gt;
+        <span>ダウンロード情報入力</span>
+      </div>
+      
+    </div>
+    <!-- 終了: header -->
+    
+    <!-- 開始: main -->
+    <div id="main">
+      <h1>
+        <span class="jp">ダウンロード情報入力</span>
+      </h1>
+      
+      <!-- 開始: 概要 -->
+      <div class="section">
+        
+        <div class="lpar">
+          <p>ダウンロード情報入力</p>
+			ASNAROにご興味を頂きましてありがとうございます。<br />
+			カタログ・事例集のダウンロードに際し、恐れ入りますが下記欄にご入力をお願い致します。<br />
+			[ASNAROカタログ・事例集ダウンロード]　ボタンクリックによりzipファイルでカタログ・事例集をご覧頂けます。<br />
+        </div>
+        
+        <form method="post" action="../cgi-bin/postmail/postmail_asnaroinput.cgi" ><div>
+<!--
+          <input type="hidden" name="ok_page" value="http://www.i4s.co.jp/asnaro/asnaroinputaf.html" />
+-->
+		<!--input type="hidden" name="ok_page" value="http://www.i4s.co.jp/asnaro/asnaro_pamphlet.zip"　固定-->
+         <!--input type="hidden" name="to_mail" value="info@i4s.co.jp" /--><!-- 送信先アドレス 固定-->
+          <!--input type="hidden" name="subject" value="ASNAROカタログ・事例集ダウンロード 情報" /--><!-- 受け取るメールタイトル -->
+          <label for="inputName">お名前　（必須）</label>
+          <br />
+          <input id="inputName" size="50" type="text" name="お名前" /><br />
+          <br />
+          <label for="inputCompany">会社名　（必須）</label><br />
+          <input id="inputCompany" size="100" type="text" name="会社名" /><br />
+          <br />
+          <label for="inputSector">部署名</label><br />
+          <input id="inputSector" size="100" type="text" name="部署名" /><br />
+          <br />
+          <label for="inputE-mail">連絡先メールアドレス　（必須）</label><br />
+          <input id="inputE-mail" size="100" type="text" name="email" /><br />
+          <br />
+          <label for="inputAddress">連絡先住所</label><br />
+          <input id="inputAddress" size="100" type="text" name="連絡先住所" /><br />
+          <br />
+          <label for="inputTel">連絡先電話番号　（必須）</label><br />
+          <input id="inputTel" size="30" type="text" name="電話番号" /><br />
+          <br />
+          <label for="inputFax">連絡先 FAX</label><br />
+          <input id="inputFax" size="30" type="text" name="FAX" /><br />
+          <br />
+		  <input type="hidden" name="当社をお知りになったきっかけ" id="motive"/>
+          <label for="checkMotive">当社、または当社のHPをどういったきっかけでお知りになりましたか？（必須　複数回答可）</label><br />
+          <input id="motive1" type="checkbox" value="1.弊社代理店からの紹介" /><label for="motive1">弊社代理店からの紹介　</label>
+          <label for="inputDistributor">代理店名（必須）</label>
+          <input id="inputDistributor" size="50" type="text" name="代理店名" /><br />
+          <input id="motive2" type="checkbox" value="2.雑誌・メルマガなど" /><label for="motive2">雑誌・DM・メルマガなど　</label>
+          <input id="motive3" type="checkbox" value="3.Webで検索して" /><label for="motive3">Webで検索して　</label>
+          <input id="motive4" type="checkbox" value="4.講演・セミナー" /><label for="motive4">講演・セミナー　</label>
+          <input id="motive5" type="checkbox" value="5.知人・友人からの紹介" /><label for="motive5">知人・友人からの紹介　</label><br />
+          <input id="motive6" type="checkbox" value="6.その他" /><label for="motive6">その他（下記に具体的な内容をご記入ください)</label>
+          <br />
+          <textarea id="inputMotivalue5" rows="5" cols="40" name="具体的な内容"></textarea><br />
+          <br />
+          <label for="inputQuestion">ご質問・ご要望等</label><br />
+          <textarea id="inputQuestion" rows="10" cols="80" name="ご質問・ご要望等"></textarea>
+          <br /><br /><br />
+		  <input type="hidden" name="need" id="need" value=""/>
+          <input type="submit" value="ASNARO カタログ・事例集ダウンロード" onclick="return validate();"/>
+		  <script>
+function validate(){
+  var v="";
+  var dist = "";
+  document.getElementById("need").value = "お名前 会社名 email 電話番号";
+  for(var i=1;i<=6;i++){
+	var ch = document.getElementById("motive" + i);
+	if(ch.checked){
+	  if(i==1){
+	    document.getElementById("need").value = "お名前 会社名 email 電話番号 代理店名";
+	  }
+	  if(v != ""){
+	    v += ",";
+	  }
+	  v += ch.value;
+	}
+  }
+  if(v == ""){
+	alert("当社をお知りになったきっかけを入力してください。");
+	return false;
+  }
+  document.getElementById("motive").value = v;
+  return true;
+}
+		  </script>
+          </div>
+	     </form>
+      </div>
+      <!-- 終了: 会社概要 -->
+      
+    </div>
+    <!-- 終了: main -->
+    
+    <!-- 開始: メインメニュー -->
+    <div id="mainMenu">
+      <hr />
+      <h2>ナビゲーション</h2>
+      <ul>
+        <li id="menu_home"><a href="../index.html"><span>HOME</span></a></li>
+        <li class="here"><a href="../pdc/pdcinf.html"><span>製品情報</span></a><ul>
+          <li><a href="https://www.i4s.co.jp/simpleexperimentdb/simpleexperimentdbinfo.html"><span>簡易実験データベース『Simple Experiment DB』</span></a></li>
+          <li><a href="https://www.i4s.co.jp/simpleclusteringplot/simpleclusteringplotinfo.html"><span>多変量データ自動分類プロット『Simple Clustering Plot』</span></a></li>
+          <li><a href="https://www.i4s.co.jp/rdformpat/rdformpatinfo.html"><span>デジタルラボノート 『R&amp;D FormPat』</span></a></li>
+          <li class="here"><span>エンジニアリングデータ管理システム『ASNARO』</span></li>
+          <li><a href="../caecloud/caecloudinfo.html"><span>CAE 社内クラウドシステム 『CAE クラウド』</span></a></li>
+          <li><a href="../qm/qminfo.html"><span>3次元リアルタイム磁場解析ソルバシステム 『Qm』</span></a></li>
+          <li><a href="../rcm/rcmabs.html"><span>研究フロー統合管理システム 『RCM』</span></a></li>
+          <li><a href="../etc/etcbiz.html"><span>その他</span></a></li>
+        </ul></li>
+        <li><a href="../srv/rcmsrv.html"><span>サービス</span></a></li>
+        <li><a href="../com/i4sabs.html"><span>会社情報</span></a></li>
+        <li><a href="../etc/etcrec.html"><span>採用情報</span></a></li>
+        <li><a href="../etc/formqa.html"><span>お問い合わせ</span></a></li>
+      </ul>
+    </div>
+    <!-- 終了: メインメニュー -->
+    
+    <!-- 開始: footer -->
+    <div id="footer">
+      <hr />
+      <address>
+        〒610-0354 京都府京田辺市山手南2丁目1-3 ハチセンビル3号館3階 302<br />
+        電話/FAX: 050-3356-9006 E-mail: info@i4s.co.jp
+      </address>
+      <div>
+        <a href="../index.html">https://www.i4s.co.jp</a> : Copyright 2006-2023
+        QUATRE-i SCIENCE All Rights Reserved.
+      </div>
+    </div>
+    <!-- 終了: footer -->
+    
+  </body>
+</html>

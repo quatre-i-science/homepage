@@ -1,0 +1,28 @@
+@charset "UTF-8"; /* 文字コード宣言 */
+@import url("../common/styles/default/base.css");
+@import url("../common/styles/default/main.css");
+
+
+#main h1:before {
+	content: url("com_h1.png");
+}
+* html #main h1 span.jp { /* IE6 用 */
+	list-style-image: url("com_h1.png");
+}
+*+html #main h1 span.jp{ /* IE7 用 */
+	list-style-image: url("com_h1.png");
+}
+
+div.subsection {
+	clear: both;
+	margin-bottom: 30px;
+}
+#main dt {
+	color: #0000FF;
+	font-weight: 700;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+#main dd {
+	margin-left: 0px;
+}

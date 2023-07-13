@@ -1,0 +1,61 @@
+@charset "UTF-8"; /* 文字コード宣言 */
+@import url("../common/styles/default/base.css");
+@import url("../common/styles/default/main.css");
+
+
+#main h1:before {
+	content: url("adp_h1.png");
+}
+* html #main h1 span.jp { /* IE6 用 */
+	list-style-image: url("adp_h1.png");
+}
+*+html #main h1 span.jp{ /* IE7 用 */
+	list-style-image: url("adp_h1.png");
+}
+
+div.subsection {
+	margin-top: 2.5em;
+}
+
+
+table {
+	table-layout: fixed;
+	margin: 0px 15px 2em 15px;
+	border: none;
+	width: 600px;
+}
+table caption {
+	font-weight: 700;
+	line-height: 20px;
+}
+td, th {
+	border: 1px solid #999999;
+	font-weight: 500;
+	padding: 0.4em 5px;
+	font-size: 12px;
+	line-height: 18px;
+}
+table .ttl {
+	background-color: #EEEEEE;
+	width: 9em;
+}
+
+table.trt {
+	border: 1px solid #999999;
+	margin-left: 16px; margin-right: 16px;
+	width: 596px;
+}
+.trt caption {
+	display: none;
+}
+table.trt td, table.trt th {
+	border: none 0px;
+	border-bottom: 1px #999999 solid;
+}
+table.trt th {
+	border-right: 1px #999999 solid;
+	background-color: #EEEEEE;
+}
+table.trt .ttl {
+	background-color: transparent;
+}

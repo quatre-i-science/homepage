@@ -1,0 +1,75 @@
+@charset "UTF-8"; /* 文字コード宣言 */
+@import url("../common/styles/default/base.css");
+@import url("../common/styles/default/main.css");
+
+
+#main h1:before {
+	content: url("rcm_h1.png");
+}
+* html #main h1 span { /* IE6 用 */
+	list-style-image: url("rcm_h1.png");
+}
+*+html #main h1 span { /* IE7 用 */
+	list-style-image: url("rcm_h1.png");
+}
+
+div.subsection {
+	clear: both;
+	margin-bottom: 30px;
+}
+div.subsection:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+}
+* html div.subsection {
+    height: 1em;
+    overflow: visible;
+}
+.subsection ul {
+	list-style: outside;
+	padding-left: 20px;
+	float: right;
+	margin-left: 30px;
+	line-height: 18px;
+}
+.subsection li {
+	margin-bottom: 5px;　/*　他は20px。このページのみ変えてある　*/
+}
+
+.text_area{
+	width:600px;
+	float:left;
+	margin-bottom:0px;
+}
+
+.small_img{
+	width:200px;
+	float:left;
+	text-align:center;
+}
+
+.text_box1{
+	width:400px;
+	float:left;
+}
+
+.clear{
+	clear:both;
+}
+
+.contents_li li{
+	padding-bottom:10px;
+}
+
+#spec {
+	width:620px;
+	border-collapse: collapse;
+	border:1px #666666 solid;
+}
+
+#spec td{
+	border:solid 1px #666666;
+}

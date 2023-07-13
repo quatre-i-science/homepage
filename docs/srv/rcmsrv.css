@@ -1,0 +1,52 @@
+@charset "UTF-8"; /* 文字コード宣言 */
+@import url("../common/styles/default/base.css");
+@import url("../common/styles/default/main.css");
+
+
+#main h1:before {
+	content: url("srv_h1.png");
+}
+* html #main h1 span.jp { /* IE6 用 */
+	list-style-image: url("srv_h1.png");
+}
+*+html #main h1 span.jp { /* IE7 用 */
+	list-style-image: url("srv_h1.png");
+}
+
+div.subsection {
+	clear: both;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+div.subsection:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 1px;
+	overflow: hidden;
+}
+* html div.subsection {
+	height: 1em;
+	overflow: visible;
+}
+
+.subsection li {
+	margin-bottom: 20px;
+}
+
+#main div.text {
+	width: 360px;
+	float: left;
+}
+#main div.lpar {
+	margin-right: 2px;
+}
+
+div.photo {
+	float: right;
+	width: 250px;
+	border: solid 1px #999999;
+	padding: 2px;
+	margin-right: 10px;
+}

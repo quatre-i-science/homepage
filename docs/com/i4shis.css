@@ -1,0 +1,43 @@
+@charset "UTF-8"; /* 文字コード宣言 */
+@import url("../common/styles/default/base.css");
+@import url("../common/styles/default/main.css");
+
+
+#main h1:before {
+	content: url("com_h1.png");
+}
+* html #main h1 span.jp { /* IE6 用 */
+	list-style-image: url("com_h1.png");
+}
+*+html #main h1 span.jp{ /* IE7 用 */
+	list-style-image: url("com_h1.png");
+}
+
+table {
+	margin-left: 15px;
+	margin-right: 15px;
+	width: 600px;
+	border: none;
+	border-bottom: solid 1px #999999;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+table thead {
+	display: none;
+}
+table td {
+	border: none;
+	border-top: solid 1px #999999;
+	padding: 1em 5px;
+	font-weight: 500;
+	vertical-align: top;
+}
+table col.ttl {
+	width: 8em;
+}
+table col.cnt {
+	width: auto;
+}
+table td span.year {
+	padding-right: 0.5em;
+}

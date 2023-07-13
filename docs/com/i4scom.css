@@ -1,0 +1,14 @@
+@charset "UTF-8"; /* 文字コード宣言 */
+@import url("../common/styles/default/base.css");
+@import url("../common/styles/default/main.css");
+
+
+#main h1:before {
+	content: url("com_h1.png");
+}
+* html #main h1 span.jp { /* IE6 用 */
+	list-style-image: url("com_h1.png");
+}
+*+html #main h1 span.jp{ /* IE7 用 */
+	list-style-image: url("com_h1.png");
+}
