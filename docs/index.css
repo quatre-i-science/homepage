@@ -1,0 +1,129 @@
+@charset "UTF-8"; /* 文字コード宣言 */
+@import url("common/styles/default/base.css");
+@import url("common/styles/default/main.css");
+
+/*
+#mainMenu ul {
+	padding-bottom: 5px;
+}
+#mainMenu li ul {
+	padding-bottom: 0px;
+}
+*/
+
+a {
+	color: #000099;
+}
+
+div#main {
+	overflow: hidden;
+	background-image: none;
+}
+div#main:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 1px;
+	overflow: hidden;
+}
+* html div#main {
+	height: 1em;
+	overflow: visible;
+}
+
+#main {
+	font-size: 12px;
+}
+
+#main h1 {
+	margin: 0px;
+	padding: 0px;
+	background-image: url("index_logo_bg.png");
+	background-repeat: no-repeat;
+	width: 800px;
+	min-height: 216px;
+	border-top:    none;
+	border-bottom: none;
+}
+
+/* IE 6 用 */
+* html #main h1 {
+	height: 216px;
+}
+
+#main h1 img {
+	height: 153px;
+	margin-top: 33px; /* 合計 63px */
+	margin-bottom: 30px;
+}
+
+div#header {
+	border: none 0px;
+	height: 96px; /* IE5 用 */
+}
+
+#main div#sec_about {
+	padding-top: 20px;
+	float: right;
+	width: 260px;
+	margin-right: 10px;
+	/* IE6 用 */ } * html #main div#sec_about {
+	margin-right: 5px;
+	padding-left: 0px;
+}
+
+#main #sec_about div#mAboutRCM {
+	padding-bottom: 5px;
+}
+
+#main #sec_about div#mAboutI4S {
+	border: double #666666 3px;
+	padding: 5px;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 700;
+	color: #666666;
+	margin-bottom: 20px;
+}
+
+#main #sec_about div#mAboutI4S2 {
+	padding: 0px;
+	font-size: 11px;
+	line-height: 17px;
+	font-weight: 700;
+	color: #666666;
+	white-space: nowrap;
+}
+
+#main div#mNews {
+	width: 508px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	float: left;
+	padding: 3px;
+	/* IE6 用 */ } * html #main div#mNews {
+	margin-left: 5px;
+	padding-right: 0px; /* 10px ではグローバルメニューが消えてしまう */
+	margin-right:  0px; /* 10px ではグローバルメニューが消えてしまう */
+}
+#main div#mNews h2 {
+}
+#mNews div.newsItems {
+	margin-right: 0px;
+	margin-left:  0px;
+	border-top: #999999 solid 1px;
+}
+#mNews div.newsItem {
+	border-bottom: #999999 solid 1px;
+	padding: 0.3em 0px 0.3em 5px;
+	line-height: 16px;
+}
+#mNews div.date {
+	float: left;
+	margin-right: 1em;
+	/*font-family: Georgia, Constantia, Hoefler Text, serif;
+	/*margin-bottom: 3px;*/
+}
+#mNews div.cont {
+	padding-left: 5.5em;
+}

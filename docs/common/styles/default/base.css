@@ -1,0 +1,111 @@
+@charset "UTF-8"; /* 文字コード宣言 */
+
+@import url("mainMenu.css");
+@import url("header.css");
+
+html {
+	background-color: #FFFFFF;
+	height: 100%;
+	background-image: url("base_body_bg.png");
+	background-repeat: repeat-y;
+	position: relative;
+	z-index: 1;
+}
+
+body {
+	background-color: transparent;
+	margin: 0px;
+	padding: 0px;
+	min-height: 100%;
+	width: 800px;
+	margin-left: 19px;
+	margin-right: 19px;
+	border-left:  1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+}
+
+a * {
+	cursor: pointer;
+}
+
+/*====================================
+  main
+====================================*/
+div#main {
+	width: 800px; /* IE 5.5 用 */
+}
+
+/*====================================
+  Footer
+====================================*/
+div#footer {
+	width: 800px; /* IE 5.5 用 */
+	clear: both;
+	border-top: 3px #CCCCCC double;
+	/*padding-bottom: auto;*/
+}
+
+#footer hr {
+	display: none;
+}
+
+#footer address {
+	text-align: right;
+	font-size: 12px;
+	font-style: normal;
+	padding: 10px 5px 5px 0px;
+	border-bottom: 1px #666666 solid;
+	background-color: #EEEEEE;
+	overflow: hidden;
+}
+#footer address:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 1px;
+	overflow: hidden;
+}
+* html #footer address {
+	height: 1em;
+	overflow: visible;
+}
+
+#footer address span.ttl {
+	width: 100%;
+	display: none;
+	
+	text-decoration: underline;
+}
+#footer address span.address {
+	width: 100%;
+	display: block;
+}
+#footer address span.tel {
+	width: 100%;
+	display: block;
+	clear: both;
+	float: left;
+	font-size: 12px;
+	margin-left: -10em;
+}
+#footer address span.email {
+	width: 10em;
+	display: block;
+	float: right;
+}
+
+#footer div {
+	text-align: right;
+	font-size: 12px;
+	padding: 4px 5px 2px 0px;
+}
+
+#footer div a {
+	color: #333333;
+	text-decoration: none;
+}
+
+#footer img {
+	border: none;
+}

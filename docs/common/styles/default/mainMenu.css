@@ -1,0 +1,220 @@
+@charset "UTF-8"; /* 文字コード宣言 */
+
+/*====================================
+  メインメニュー
+====================================*/
+
+div#mainMenu {
+	width: 800px;
+	position: absolute;
+	/*top: 80px; left: 20px;*/
+	top: 60px; left: 20px;
+	z-index: auto;
+}
+#mainMenu a {
+	color: #0000FF;
+}
+
+#mainMenu h2 {
+	display: none;
+}
+#mainMenu a img {
+	border: none;
+}
+
+#mainMenu ul {
+	margin: 0px; padding: 0px;
+	list-style: none outside;
+	position: relative; z-index: 40;
+	/*padding-left: 35px;*/
+	height: 32px;
+	background-color: #CCCCFF;
+	background-image: url("mainMenu/menubg.png");
+}
+
+#mainMenu li {
+	margin: 0px; padding: 0px;
+	position: relative;
+	z-index: 20;
+	top: 0px; left: 0px;
+	float: left;
+	width: 89px;
+	height: 100%;
+	overflow: visible;
+	border-right: 1px solid #cccccc;
+}
+#mainMenu li a {
+	display: block;
+	height: 100%; width: 100%;
+	z-index: 1;
+	font-size: 12px;
+	text-decoration: none;
+}
+#mainMenu li.active {
+	z-index: 200;
+	overflow: visible;
+}
+#mainMenu li.active a {
+	background-image: url("mainMenu/menubg.png");
+	background-position: -200px -34px;
+	background-color: #FFDDBB;
+	color: #D87115;
+}
+#mainMenu #menu_home.active a {
+	background-image: url("mainMenu/menubg.png");
+	background-position: 0px -34px;
+	background-color: #FFDDBB;
+	color: #D87115;
+}
+/* 現在地をグレーアウト (HOME 以外) */
+#mainMenu li.here {
+	background-image: url("mainMenu/menubg.png");
+	background-position: -200px -66px;
+	background-color: #DDDDDD;
+	color: #999999;
+}
+#mainMenu .here a { /* #mainMenu li.here a にすると、製品情報のページで製品情報を選んでもアクティブ表示にならない */
+	background-image: url("mainMenu/menubg.png");
+	background-position: -200px -66px;
+	background-color: #DDDDDD;
+	color: #999999;
+}
+/* 現在地をグレーアウト (HOME) */
+#mainMenu #menu_home.here {
+	background-image: url("mainMenu/menubg.png");
+	background-position: 0px -66px;
+	background-color: #DDDDDD;
+	color: #999999;
+}
+#mainMenu li.active li a {
+	background-image: none;
+	/*background-color: transparent; IE 8 beta1 では bg-color の指定をしなければならない*/
+	background-color: #FFFFFF;/*リンクの背景の色*/
+	color: #333333;/*リンクの文字の色*/
+}
+#mainMenu li.here span {
+	font-size: 12px; font-weight: 700;
+	position: absolute;
+	/* 現在地を上に飛び出させる場合
+	bottom: 33px; right: 3px;
+	*/
+	/* 飛び出さない場合 */
+	bottom: 3px; right: 3px;
+}
+#mainMenu li.here li {
+	background-image: none;
+	background-color: transparent;
+	border: none;
+	overflow: hidden;
+}
+#mainMenu li.here li span {
+	font-size: 12px; font-weight: 500;
+	position: static;
+}
+#mainMenu li.here li.here span {
+	background-color: #EEEEEE;
+}
+#mainMenu li a span {
+	position: absolute;
+	bottom: 3px; right: 3px;
+}
+
+/* プルダウンメニュー　*/
+#mainMenu li ul {
+	display: none;
+	padding: 0px; margin: 0px;
+	z-index: 200;
+	position: absolute;
+	top: 27px; left: 2px; /*test 文字を上に飛び出させる時はこっちを使う？ */
+	/*float: left; test*/
+	/*background-color: #555555;*/
+	background-color: transparent;
+	background-image: url("mainMenu/pulldownbg.png");
+	border: solid #AAAAAA 2px;
+	height: auto; width: 350px;
+}
+#mainMenu li.active ul {
+	display: block;
+}
+/* start: test!!! 製品情報の中で RCM か その他 か、現在地を上に飛び出させる場合
+#mainMenu li.here ul {
+	display: block;
+}
+#mainMenu li.here li {
+	display: none;
+}
+#mainMenu .here li.here {
+	display: block;
+	position: absolute;
+	left: 92px; top: -48px;
+	background-image: none;
+	background-color: transparent;
+	border: none;
+	width: auto;
+}
+#mainMenu li.active li {
+	display: block;
+}
+#mainMenu li.here li.here span {
+	display: list-item;
+	list-style: square url("../image/mainMenu/point.png") inside;
+	font-weight: 700;
+	white-space: nowrap;
+}
+ end: test!!! */
+
+#mainMenu li li {
+	float: none; clear: both;
+	position: static;
+	font-size: 12px;
+	width: auto;
+	height: auto; line-height: 19px;
+	margin: 4px 10px;
+	border-right: #666666 solid 2px;
+	border-bottom: #999999 solid 1px;
+	border-top: #CCCCCC solid 1px;
+	border-left: #CCCCCC solid 1px;
+	border: none;
+}
+
+#mainMenu li li a {
+	display: block;
+	text-decoration: none;
+	position: static;
+	padding-left: 5px;
+	width: 325px; height: auto;
+}
+#mainMenu li li a:hover {
+	background-color: #DDFFFF;
+}
+#mainMenu li li a:hover span {
+	color: #339999;
+}
+
+#mainMenu li li span {
+	display: block;
+	background-color: #FFFFFF;
+	background-color: #FCFCFC;
+	position: static;
+	padding-left: 5px;
+	width: 325px; height: auto;
+}
+
+#mainMenu li li a span {
+	display: inline;
+	background-color: transparent;
+	width: auto; height: auto;
+	padding: 0px;
+	position: static;
+}
+
+#mainMenu hr {
+	display: none;
+}
+
+#mainMenu ul {
+	padding-bottom: 2px;
+}
+#mainMenu li ul {
+	padding-bottom: 0px;
+}

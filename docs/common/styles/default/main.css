@@ -1,0 +1,150 @@
+@charset "UTF-8"; /* 文字コード宣言 */
+
+div#main {
+	background-image: url("main_sidebg.jpg");
+	background-position: 0px 104px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	width: 800px;
+	font-size: 12px;
+}
+
+#main h1 {
+	margin: 0px;
+	padding: 0px;
+	height: 100px;
+	border-top:    solid 2px #666666;
+	border-bottom: solid 2px #666666;
+	line-height: 104px;
+	overflow: hidden;
+	font-size: 200%;
+	font-weight: 700;
+	font-family: "ＭＳ Ｐゴシック", "Osaka", "ヒラギノ角ゴ Pro W3";
+	background-image: url("main_h1_bg.jpg");
+}
+#main h1 span.jp {
+}
+* html #main h1 span { /* IE6 用 */
+	display: list-item;
+	padding-left: 800px;
+	list-style: none outside;
+}
+*+html #main h1 span { /* IE7 用 */
+	display: list-item;
+	padding-left: 100%;
+	list-style: none outside;
+}
+* html #main h1 span.en { /* IE6 用 */
+	display: none;
+}
+*+html #main h1 span.en { /* IE7 用 */
+	display: none;
+}
+#main h1 span.en {
+	font-size: 50%;
+}
+
+#main div.lpar {
+	margin-left:  15px;
+	margin-right: 15px;
+	margin-bottom: 1em;
+}
+#main p {
+	line-height: 18px;
+	margin: 0px;
+}
+
+#main div.section {
+	width: 630px;
+	padding: 0px 10px 50px 10px;
+	float: right;
+	overflow: hidden;
+}
+
+#main .section h2 {
+	background-image: url("main_h2_bg.png");
+	padding: 5px 10px 2px 20px;
+	letter-spacing: 1px;
+	border: solid 1px #333366;
+	font-size: 120%;
+	font-weight: 300;
+	margin: 20px 0px 20px 0px;
+}
+
+#main .section div.subsection {
+	margin-bottom: 3em;
+}
+#main .section h3 {
+	margin: 0px 10px 15px 10px;
+	padding: 0px 5px;
+	font-size: 14px;
+	font-weight: 300;
+	background-image: url("../image/h3_mark.png");
+	background-repeat: no-repeat;
+	background-position: 0px 3px;
+	line-height: 20px;
+	border-bottom: double #9999CC 3px;
+}
+
+div#subMenu {
+	float: left;
+	width: 150px;
+}
+
+div#subMenu {
+}
+
+#subMenu h2 {
+	display: none;
+}
+
+div#subMenu div {
+	text-align: center;
+}
+
+#subMenu ul {
+	margin: 0px; padding: 0px;
+	list-style: none outside;
+}
+
+#subMenu li {
+	background-repeat: no-repeat;
+	border-bottom: 1px #F0DEAC solid;
+}
+#subMenu li.here {
+	background-color: #FFFFFF;
+}
+#subMenu li.here span {
+	display: block;
+	padding: 7px 0px 4px 20px;
+	width: 130px;
+	text-decoration: none;
+	color: #000000;
+	font-size: 12px;
+	cursor: default;
+}
+
+#subMenu li a {
+	/*width: 130px;*/
+	display: block;
+	padding: 7px 0px 4px 20px;
+	margin-right: 1px;
+	text-decoration: none;
+	color: #000000;
+	font-size: 12px;
+	background-image: url("main_sidemarker.png");
+	background-repeat: no-repeat;
+	background-position: 2% 57%;
+}
+#subMenu li a:hover {
+	color: #999999;
+}
+
+#subMenu ul {
+	border-top: 1px solid #CCCCCC;
+	margin-top: 20px;
+}
+#subMenu li {
+	background: none;
+	border-bottom: 1px solid #CCCCCC;
+}
